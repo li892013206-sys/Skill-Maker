@@ -1,0 +1,15 @@
+## 🛠️ Usage
+
+### 1. Initialize the Environment
+Set up your skill registry and create the standardized project structure.
+```bash
+python skill_init.py --name "credit_risk_assessment"
+2. Extract Expert Knowledge
+Launch the interactive Interviewer Agent. Answer the strategic questions to define decision chains, risk thresholds, and business constraints. This automatically generates the SKILL.md logic file.
+python expert_interviewer.py --skill "credit_risk_assessment"
+3. Scan & Refactor Existing Code
+Identify complex business calculations or repetitive financial logic in your current codebase and encapsulate them into the Skill's tools/ directory.
+python scan_code.py --source "./legacy_fin_scripts" --target "credit_risk_assessment"
+4. Compile into AI Tools
+Convert the expert logic and Python tools into a format that AI Agents (like Claude) can call directly.
+python skill_compiler.py --skill "credit_risk_assessment"
